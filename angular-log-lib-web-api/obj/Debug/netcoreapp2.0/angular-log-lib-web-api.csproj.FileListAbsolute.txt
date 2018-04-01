@@ -1,0 +1,10 @@
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\bin\Debug\netcoreapp2.0\angular-log-lib-web-api.deps.json
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\bin\Debug\netcoreapp2.0\angular-log-lib-web-api.runtimeconfig.json
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\bin\Debug\netcoreapp2.0\angular-log-lib-web-api.runtimeconfig.dev.json
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\bin\Debug\netcoreapp2.0\angular-log-lib-web-api.dll
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\bin\Debug\netcoreapp2.0\angular-log-lib-web-api.pdb
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\obj\Debug\netcoreapp2.0\angular-log-lib-web-api.csproj.CoreCompileInputs.cache
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\obj\Debug\netcoreapp2.0\angular-log-lib-web-api.AssemblyInfoInputs.cache
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\obj\Debug\netcoreapp2.0\angular-log-lib-web-api.AssemblyInfo.cs
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\obj\Debug\netcoreapp2.0\angular-log-lib-web-api.dll
+C:\Users\Ulas.Balkanioglu\AppData\Roaming\npm\node_modules\angular-log-lib-web-api\obj\Debug\netcoreapp2.0\angular-log-lib-web-api.pdb
