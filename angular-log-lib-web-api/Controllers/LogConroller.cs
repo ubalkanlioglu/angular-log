@@ -27,15 +27,12 @@ namespace angular_log_lib_web_api.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] LogEntry value)
         {
-            IActionResult result;
 
-            result = Ok(value);
-
-            return result;
+            return Ok(new LogEntry(){Message="qqqqqqqqqqqqqq"});
         }
 
         [Route("post2")]
-[HttpPost]
+        [HttpPost]
         public IActionResult Post2([FromBody] LogEntry value)
         {
             IActionResult result;

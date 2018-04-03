@@ -18,12 +18,16 @@ export class LogTestComponent {
         this.logger.clearLog();
     }
 
+    setObserver(): void{
+        this.logger.setObserver('#btnTestObserver');
+    }
+
     getLocalStorage(): void{
         let tmp = this.logger.publishers.
             find(p => p.constructor.name === "LogLocalStorage");
             if (tmp!=null) {
                 let local=tmp as LogLocalStorage;
-                local.getAll().subscribe(response => this.logEntries = response);;
+                local.getAll().subscribe(response => this.logEntries = response);
             }
     }
 
@@ -41,7 +45,6 @@ export class LogTestComponent {
     }
 
     testLog(): void {
-        this.logger.level = LogLevel.Debug;
         this.logger.debug("Test the log() Method", "Paul", "John", 2, 3);
     }
 }

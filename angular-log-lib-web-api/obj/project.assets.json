@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ulas.Balkanioglu\\AppData\\Roaming\\npm\\node_modules\\angular-log-lib-web-api\\angular-log-lib-web-api.csproj",
+      "projectUniqueName": "C:\\Users\\Ulas.Balkanioglu\\AppData\\Roaming\\npm\\node_modules\\angular-log\\angular-log-lib-web-api\\angular-log-lib-web-api.csproj",
       "projectName": "angular-log-lib-web-api",
-      "projectPath": "C:\\Users\\Ulas.Balkanioglu\\AppData\\Roaming\\npm\\node_modules\\angular-log-lib-web-api\\angular-log-lib-web-api.csproj",
+      "projectPath": "C:\\Users\\Ulas.Balkanioglu\\AppData\\Roaming\\npm\\node_modules\\angular-log\\angular-log-lib-web-api\\angular-log-lib-web-api.csproj",
       "packagesPath": "C:\\Users\\Ulas.Balkanioglu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ulas.Balkanioglu\\AppData\\Roaming\\npm\\node_modules\\angular-log-lib-web-api\\obj\\",
+      "outputPath": "C:\\Users\\Ulas.Balkanioglu\\AppData\\Roaming\\npm\\node_modules\\angular-log\\angular-log-lib-web-api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

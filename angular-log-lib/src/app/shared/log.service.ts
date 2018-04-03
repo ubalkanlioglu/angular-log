@@ -4,6 +4,14 @@ import { Injectable } from '@angular/core';
 import { LogPublisher } from './log-publishers';
 import { LogPublishersService } from './log-publishers.service';
 
+import { Observable } from "rxjs/Observable";
+import { fromEvent } from 'rxjs/observable/fromEvent';
+import 'rxjs/add/operator/scan';
+import 'rxjs/add/operator/throttleTime';
+import 'rxjs/add/observable/interval';
+import 'rxjs/add/operator/concat';
+
+
 export enum LogLevel {
     All = 0,
     Debug = 1,
@@ -101,6 +109,27 @@ export class LogService {
         }
     }
 
+    private data: Observable<Array<number>>;
+    private values: Array<number> = [];
+    private anyErrors: boolean;
+    private finished: boolean;
+    setObserver(selector: string): void {
+
+        var numbers = Observable.of(10, 20, 30);
+        var letters = Observable.of('a', 'b', 'c');
+        var interval = Observable.interval(1000);
+        var result = numbers.concat(letters).concat(interval);
+        result.subscribe(x => console.log(x));
+
+        // var button = document.querySelector(selector);
+        // fromEvent(button, 'click')
+        //     .throttleTime(1000)
+        //     .map((event: {clientX: number}) => event.clientX)
+        //     .scan((count, clientX) => count + clientX, 0)
+        //     .subscribe(count => console.log(count));
+
+    }
+
     private writeToLog(msg: string, level: LogLevel, params: any[]) {
         if (this.shouldLog(level)) {
 
@@ -111,7 +140,10 @@ export class LogService {
             entry.logWithDate = this.logWithDate;
 
             for (let logger of this.publishers) {
-                logger.log(entry).subscribe(response => console.log(response));
+                logger.log(entry).subscribe(response => {
+                    if (!response)
+                        console.log(response);
+                });
             }
         }
     }

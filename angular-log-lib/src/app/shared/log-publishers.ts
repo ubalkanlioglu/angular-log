@@ -74,11 +74,13 @@ export class LogWebApi extends LogPublisher {
     }
 
     log(record: LogEntry): Observable<boolean> {
-        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let headers = new Headers({ 'Content-Type': 'application/json'});
         let options = new RequestOptions({ headers: headers });
 
         return this.http.post(this.location, record, options)
-            .map(response => response.json)
+            .map(response => {
+                response.json
+            })
             .catch(this.handleErrors);
     }
     clear(): Observable<boolean> {
